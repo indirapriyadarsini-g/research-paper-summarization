@@ -9,6 +9,14 @@ nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
 
+# Set a specific data location
+nltk.data.path.append('PATH OF THIS FILE')
+
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
+import string
+
 def preprocess(text):
     # Convert text to lowercase
     text = text.lower()
